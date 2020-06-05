@@ -22,8 +22,8 @@ namespace Discord_Profile
             Token.TokenGrabber();
             Id.IdGrabber();
 
-            //labToken.Text = Data.token;
-            //labId.Text = Data.id;
+            labToken.Text = Data.token;
+            labId.Text = Data.id;
         }
     }
 }
