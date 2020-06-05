@@ -16,7 +16,7 @@ namespace Discord_Profile
             tokenSplit = Data.token.Split('.')[0];
             //tokenSplit[0] = Data.token.Split(new char[] { '.' })[0];
             Data.id = Base64Decode(tokenSplit);
-            Console.WriteLine(Data.id);
+            Console.WriteLine($"ID = {Data.id}");
 
         }
 

