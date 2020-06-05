@@ -1,6 +1,6 @@
 # Discord-Profile
 자신의 토큰을 쉽게 알 수 있는 프로그램입니다. <br>
-Program.cs 에 모든 코드가 있습니다. <br>
+개발중 입니다 <br>
 <a href="https://github.com/1-EXON/Discord-Profile/tree/master/Discord%20Profile/Discord%20Profile" target="_blank">소스코드 바로 보기
 </a>
 
