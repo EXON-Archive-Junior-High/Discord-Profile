@@ -32,6 +32,8 @@
             this.TOKEN = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.Label();
             this.labId = new System.Windows.Forms.Label();
+            this.butTokenCopy = new System.Windows.Forms.Button();
+            this.butIdCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labToken
@@ -74,11 +76,35 @@
             this.labId.TabIndex = 2;
             this.labId.Text = "Id";
             // 
+            // butTokenCopy
+            // 
+            this.butTokenCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTokenCopy.Location = new System.Drawing.Point(126, 73);
+            this.butTokenCopy.Name = "butTokenCopy";
+            this.butTokenCopy.Size = new System.Drawing.Size(75, 23);
+            this.butTokenCopy.TabIndex = 4;
+            this.butTokenCopy.Text = "Copy";
+            this.butTokenCopy.UseVisualStyleBackColor = true;
+            this.butTokenCopy.Click += new System.EventHandler(this.butTokenCopy_Click);
+            // 
+            // butIdCopy
+            // 
+            this.butIdCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butIdCopy.Location = new System.Drawing.Point(72, 178);
+            this.butIdCopy.Name = "butIdCopy";
+            this.butIdCopy.Size = new System.Drawing.Size(75, 23);
+            this.butIdCopy.TabIndex = 5;
+            this.butIdCopy.Text = "Copy";
+            this.butIdCopy.UseVisualStyleBackColor = true;
+            this.butIdCopy.Click += new System.EventHandler(this.butIdCopy_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.butIdCopy);
+            this.Controls.Add(this.butTokenCopy);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.labId);
             this.Controls.Add(this.TOKEN);
@@ -97,6 +123,8 @@
         private System.Windows.Forms.Label TOKEN;
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Label labId;
+        private System.Windows.Forms.Button butTokenCopy;
+        private System.Windows.Forms.Button butIdCopy;
     }
 }
 

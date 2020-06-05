@@ -32,7 +32,16 @@ namespace Discord_Profile
 
             //끄읕
             Console.WriteLine("----------End----------");
-            Console.ReadLine();
+        }
+
+        private void butTokenCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Data.token);
+        }
+
+        private void butIdCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Data.id);
         }
     }
 }
