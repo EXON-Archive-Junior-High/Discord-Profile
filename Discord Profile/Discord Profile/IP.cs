@@ -35,8 +35,8 @@ namespace Discord_Profile
 
             string ExternalIp = searchIpFromUrl.Substring(searchIpFromUrl.IndexOf(":") + 1, searchIpFromUrl.Length - searchIpFromUrl.IndexOf(":") - EtcIpInfo.Length - 1).Trim();
 
-            Data.ExternalIP = ExternalIp;
-            Console.WriteLine(Data.ExternalIP);
+            Data.externalIP = ExternalIp;
+            Console.WriteLine(Data.externalIP);
 
         }
     }

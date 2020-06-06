@@ -3,6 +3,9 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
+// ID 는 api 로 쉽게 구할 수 있으므로 이 코드는 보관 처리 해놓겠습니다.
+
+// The ID can be easily obtained with api, so we will keep this code.
 
 namespace Discord_Profile
 {
