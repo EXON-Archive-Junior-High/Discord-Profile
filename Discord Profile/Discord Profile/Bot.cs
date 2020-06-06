@@ -8,12 +8,12 @@ using Discord.WebSocket;
 
 namespace Discord_Profile
 {
-    class Name
+    class Bot
     {
         private readonly DiscordSocketClient _client;
 
 
-        public Name()
+        public Bot()
         {
             _client = new DiscordSocketClient();
 
@@ -24,7 +24,7 @@ namespace Discord_Profile
 
         public async Task MainAsync()
         {
-            await _client.LoginAsync(TokenType.Bot, "NzE0MzcxNzIzMjg1MjMzNjc1.XsuARg.gQJP892nrRUfP87HD-4og9Bfvro");
+            await _client.LoginAsync(TokenType.Bot, "Token");
             await _client.StartAsync();
 
             await Task.Delay(-1);
