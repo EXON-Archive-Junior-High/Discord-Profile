@@ -19,3 +19,7 @@
 - Verified (인증을 했는지?)
 - Phone (폰)
 - Avatar (아바타)
+
+# 도움을 주신 분들
+<a href="https://github.com/muno9748">muno9748</a> <br>
+디스코드의 api 사용 방법을 알려주셨습니다.
