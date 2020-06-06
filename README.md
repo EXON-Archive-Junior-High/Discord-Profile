@@ -4,7 +4,7 @@
 <a href="https://github.com/1-EXON/Discord-Profile/tree/master/Discord%20Profile/Discord%20Profile" target="_blank">소스코드 바로 보기
 </a>
 
-<b>※만일 사용자가 이 코드를 악용할 경우, 책임은 사용자에게 있습니다</b>
+<b>※ 이 코드는 자신의 디스코드 정보를 확인하도록 제작하였으며 만일 사용자가 이 코드를 악용할 경우, 책임은 사용자에게 있습니다</b>
 
 ## Info
 확인할 수 있는 정보
