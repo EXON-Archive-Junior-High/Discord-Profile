@@ -90,6 +90,7 @@
       <DependentUpon>Discord Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Id.cs" />
+    <Compile Include="IP.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

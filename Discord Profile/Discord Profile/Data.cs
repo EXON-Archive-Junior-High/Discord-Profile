@@ -11,5 +11,9 @@ namespace Discord_Profile
         public static string token { get; set; }
 
         public static string id { get; set; }
+
+        public static string internalIP { get; set; }
+
+        public static string ExternalIP { get; set; }
     }
 }
