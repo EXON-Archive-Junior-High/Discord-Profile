@@ -22,8 +22,8 @@ namespace Discord_Profile
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Menu("Home", true);
-            Menu("Info", false);
+            MenuVisible("Home", true);
+            MenuVisible("Info", false);
             //시작
             Console.WriteLine("----------Start----------");
 
@@ -77,7 +77,7 @@ namespace Discord_Profile
             Clipboard.SetText(Data.externalIP);
         }
 
-        private void Menu(string menu, bool visible)
+        private void MenuVisible(string menu, bool visible)
         {
             switch (menu)
             {
@@ -128,14 +128,14 @@ namespace Discord_Profile
         }
         private void HomeMenu_Click(object sender, EventArgs e)
         {
-            Menu("Home", true);
-            Menu("Info", false);
+            MenuVisible("Home", true);
+            MenuVisible("Info", false);
         }
 
         private void InfoMenu_Click(object sender, EventArgs e)
         {
-            Menu("Home", false);
-            Menu("Info", true);
+            MenuVisible("Home", false);
+            MenuVisible("Info", true);
         }
     }
 }
