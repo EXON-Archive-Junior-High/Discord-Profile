@@ -15,14 +15,16 @@ namespace Discord_Profile
     {
         public static void GetInfo()
         {
-            string url = "https://discord.com/api/v7/users/@me";
+            string url = "https://discordapp.com/api/users/@me";
             string responseText = string.Empty;
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Timeout = 30 * 1000;
+            //request.Headers.Add("authorization", Data.token);
             request.Headers.Add("authorization", Data.token);
 
+            
             using (HttpWebResponse resp = (HttpWebResponse)request.GetResponse())
             {
                 HttpStatusCode status = resp.StatusCode;
@@ -33,8 +35,11 @@ namespace Discord_Profile
                 {
                     responseText = sr.ReadToEnd();
                 }
+
+                //resp.Close();
             }
 
+     
             Console.WriteLine(responseText);
 
             responseText = responseText.Replace("{","");

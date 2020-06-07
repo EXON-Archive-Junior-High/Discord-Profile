@@ -22,6 +22,8 @@ namespace Discord_Profile
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Menu("Home", true);
+            Menu("Info", false);
             //시작
             Console.WriteLine("----------Start----------");
 
@@ -42,7 +44,10 @@ namespace Discord_Profile
             label8.Text = Data.info[Convert.ToInt32(InfoNum.locale)];
             label10.Text = Data.info[Convert.ToInt32(InfoNum.verified)];
             label12.Text = Data.info[Convert.ToInt32(InfoNum.phone)];
-            label12.Text = Data.info[Convert.ToInt32(InfoNum.avatar)];
+            label14.Text = Data.info[Convert.ToInt32(InfoNum.avatar)];
+            label16.Text = $"{Data.info[Convert.ToInt32(InfoNum.flags)]} / {Data.info[Convert.ToInt32(InfoNum.public_flags)]}";
+            label18.Text = Data.info[Convert.ToInt32(InfoNum.mfa_enabled)];
+            label20.Text = Data.info[Convert.ToInt32(InfoNum.nsfw_allowed)];
             //끄읕
             Console.WriteLine("----------End----------");
         }
@@ -70,6 +75,67 @@ namespace Discord_Profile
         private void butExternalIPCopy_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(Data.externalIP);
+        }
+
+        private void Menu(string menu, bool visible)
+        {
+            switch (menu)
+            {
+                case "Home":
+                    labExternalIP.Visible = visible;
+                    butExternalIPCopy.Visible = visible;
+                    EXTERNALIP.Visible = visible;
+                    labInternalIP.Visible = visible;
+                    butIpCopy.Visible = visible;
+                    INTERANLIP.Visible = visible;
+                    labName.Visible = visible;
+                    butIdCopy.Visible = visible;
+                    NAME.Visible = visible;
+                    butTokenCopy.Visible = visible;
+                    labToken.Visible = visible;
+                    TOKEN.Visible = visible;
+
+                    label1.Visible = visible;
+                    label2.Visible = visible;
+                    label3.Visible = visible;
+                    label4.Visible = visible;
+                    label5.Visible = visible;
+                    label6.Visible = visible;
+                    label7.Visible = visible;
+                    label8.Visible = visible;
+                    label9.Visible = visible;
+                    label10.Visible = visible;
+                    label11.Visible = visible;
+                    label12.Visible = visible;
+                    label13.Visible = visible;
+                    label14.Visible = visible;
+                    label15.Visible = visible;
+                    label16.Visible = visible;
+                    label17.Visible = visible;
+                    label18.Visible = visible;
+                    label19.Visible = visible;
+                    label20.Visible = visible;
+                    break;
+
+                case "Info":
+                    label21.Visible = visible;
+                    label22.Visible = visible;
+                    label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#002\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
+                    break;
+
+
+            }
+        }
+        private void HomeMenu_Click(object sender, EventArgs e)
+        {
+            Menu("Home", true);
+            Menu("Info", false);
+        }
+
+        private void InfoMenu_Click(object sender, EventArgs e)
+        {
+            Menu("Home", false);
+            Menu("Info", true);
         }
     }
 }
