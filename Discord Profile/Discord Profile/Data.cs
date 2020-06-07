@@ -19,7 +19,7 @@ namespace Discord_Profile
         public static string[] info = new string[12];
     }
 
-    enum InfoNum
+    enum InfoNum : Int32
     {
         id, username, avatar, tag, public_flags, flags, email, verified, locale, nsfw_allowed, mfa_enabled, phone
     }

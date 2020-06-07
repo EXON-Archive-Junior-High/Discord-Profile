@@ -70,12 +70,6 @@ namespace Discord_Profile
                 i++;
             }
 
-            foreach (string a in apiText3)
-            {
-                Console.WriteLine($"{a}");
-
-            }
-
             Data.info = apiText3;
 
 

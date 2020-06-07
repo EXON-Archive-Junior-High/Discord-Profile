@@ -850,12 +850,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_30DF62666342110384D3747DCEB6A746"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_30BBA9509BBC41889372DE2EC11B32DA"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1585,6 +1579,12 @@
         "OwnerKey" = "8:_9C8B99B8BC0DBC7C8766DBBDB333DEFE"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_30DF62666342110384D3747DCEB6A746"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1603,6 +1603,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -1619,6 +1627,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -5613,7 +5629,7 @@
         "ARPHELPLINK" = "8:"
         "Title" = "8:Discord Profile Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:박시혁"
+        "ARPCONTACT" = "8:EXON"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -6163,7 +6179,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_30BBA9509BBC41889372DE2EC11B32DA"
             {
-            "SourcePath" = "8:..\\Discord Profile\\obj\\Debug\\Discord Profile.exe"
+            "SourcePath" = "8:..\\Discord Profile\\obj\\Release\\Discord Profile.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2E1F11523C134EB38499A083355C8AAB"
