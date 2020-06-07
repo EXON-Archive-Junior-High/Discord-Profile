@@ -1,6 +1,9 @@
 # Discord-Profile
+<img src="Image/Discord Profile1.png" width="50%">
+
 자신의 디스코드 정보 (토큰, 아이디, 그외 아이피 등등)을 쉽게 알 수 있는 프로그램입니다. <br>
-개발중 입니다 <br>
+<a href="https://github.com/1-EXON/Discord-Profile/releases" target="_blank">설치하기
+</a> <br>
 <a href="https://github.com/1-EXON/Discord-Profile/tree/master/Discord%20Profile/Discord%20Profile" target="_blank">소스코드 바로 보기
 </a>
 
@@ -19,6 +22,14 @@
 - Verified (인증을 했는지?)
 - Phone (폰)
 - Avatar (아바타)
+- Flags / Public Flags
+- Mfa Enbabled
+- NSFW Allowed
+
+## 설치
+2020/6/7
+[v1.0](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
+초기 릴리즈 파일
 
 # 도움을 주신 분들
 <a href="https://github.com/muno9748">muno9748</a> <br>
