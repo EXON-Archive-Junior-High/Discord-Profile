@@ -29,7 +29,7 @@
 
 ## 설치
 2020/6/7
-[v1.0](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
+[Beta](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
 초기 릴리즈 파일 (401 ERROR)
 
 # 도움을 주신 분들
