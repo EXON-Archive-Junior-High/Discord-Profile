@@ -24,8 +24,8 @@
 - Phone (폰)
 - Avatar (아바타)
 - Flags / Public Flags
-- Mfa Enbabled
-- NSFW Allowed
+- Mfa Enbabled (2단계 인증)
+- NSFW Allowed (nsfw 채널 허용)
 
 ## 설치
 2020/6/7
