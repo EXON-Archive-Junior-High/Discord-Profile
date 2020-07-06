@@ -194,11 +194,9 @@ namespace Discord_Profile
                 labToken.Text = inputToken.Text;
 
 
-   
-                string myString = Encoding.UTF8.GetString(Encoding.Default.GetBytes(yourInfo[Convert.ToInt32(InfoNum.username)]));
+                Console.WriteLine(yourInfo[Convert.ToInt32(InfoNum.username)]);
 
-
-                labName.Text = myString;
+                labName.Text = yourInfo[Convert.ToInt32(InfoNum.username)];
                 label2.Text = yourInfo[Convert.ToInt32(InfoNum.tag)];
                 label4.Text = yourInfo[Convert.ToInt32(InfoNum.id)];
                 label6.Text = yourInfo[Convert.ToInt32(InfoNum.email)];
