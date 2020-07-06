@@ -11,7 +11,7 @@ namespace Discord_Profile
 {
     class Info
     {
-        public static void GetInfo()
+        public static string[] GetInfo(string token)
         {
             string url = "https://discordapp.com/api/users/@me";
             string responseText = string.Empty;
@@ -19,8 +19,7 @@ namespace Discord_Profile
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Timeout = 30 * 1000;
-            //request.Headers.Add("authorization", Data.token);
-            request.Headers.Add("authorization", Data.token);
+            request.Headers.Add("authorization", token);
 
             
             using (HttpWebResponse resp = (HttpWebResponse)request.GetResponse())
@@ -70,7 +69,7 @@ namespace Discord_Profile
                 i++;
             }
 
-            Data.info = apiText3;
+            return apiText3;
 
 
 

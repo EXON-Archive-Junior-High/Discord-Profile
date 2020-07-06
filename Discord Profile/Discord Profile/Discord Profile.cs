@@ -20,36 +20,40 @@ namespace Discord_Profile
             InitializeComponent();
         }
 
+        string[] myInfo = new string[20];
+        string[] yourInfo = new string[20];
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            shadow.SetShadowForm(this);
+
             MenuVisible("Home", true);
             MenuVisible("Info", false);
-            //시작
-            Console.WriteLine("----------Start----------");
+            MenuVisible("Search", false);
+
 
             Token.TokenGrabber();
             IP.GetInternalIP();
             IP.GetExternalIP();
-            Info.GetInfo();
+            myInfo = Info.GetInfo(Data.token);
 
             labToken.Text = Data.token;
 
             labInternalIP.Text = Data.internalIP;
             labExternalIP.Text = Data.externalIP;
 
-            labName.Text = Data.info[Convert.ToInt32(InfoNum.username)];
-            label2.Text = Data.info[Convert.ToInt32(InfoNum.tag)];
-            label4.Text = Data.info[Convert.ToInt32(InfoNum.id)];
-            label6.Text = Data.info[Convert.ToInt32(InfoNum.email)];
-            label8.Text = Data.info[Convert.ToInt32(InfoNum.locale)];
-            label10.Text = Data.info[Convert.ToInt32(InfoNum.verified)];
-            label12.Text = Data.info[Convert.ToInt32(InfoNum.phone)];
-            label14.Text = Data.info[Convert.ToInt32(InfoNum.avatar)];
-            label16.Text = $"{Data.info[Convert.ToInt32(InfoNum.flags)]} / {Data.info[Convert.ToInt32(InfoNum.public_flags)]}";
-            label18.Text = Data.info[Convert.ToInt32(InfoNum.mfa_enabled)];
-            label20.Text = Data.info[Convert.ToInt32(InfoNum.nsfw_allowed)];
-            //끄읕
-            Console.WriteLine("----------End----------");
+            labName.Text = myInfo[Convert.ToInt32(InfoNum.username)];
+            label2.Text = myInfo[Convert.ToInt32(InfoNum.tag)];
+            label4.Text = myInfo[Convert.ToInt32(InfoNum.id)];
+            label6.Text = myInfo[Convert.ToInt32(InfoNum.email)];
+            label8.Text = myInfo[Convert.ToInt32(InfoNum.locale)];
+            label10.Text = myInfo[Convert.ToInt32(InfoNum.verified)];
+            label12.Text = myInfo[Convert.ToInt32(InfoNum.phone)];
+            label14.Text = myInfo[Convert.ToInt32(InfoNum.avatar)];
+            label16.Text = $"{myInfo[Convert.ToInt32(InfoNum.flags)]} / {myInfo[Convert.ToInt32(InfoNum.public_flags)]}";
+            label18.Text = myInfo[Convert.ToInt32(InfoNum.mfa_enabled)];
+            label20.Text = myInfo[Convert.ToInt32(InfoNum.nsfw_allowed)];
+
         }
 
         private void butTokenCopy_Click(object sender, EventArgs e)
@@ -59,7 +63,7 @@ namespace Discord_Profile
 
         private void butIdCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(Data.info[Convert.ToInt32(InfoNum.username)]);
+            Clipboard.SetText(myInfo[Convert.ToInt32(InfoNum.username)]);
         }
 
         private void butIpCopy_Click(object sender, EventArgs e)
@@ -118,9 +122,26 @@ namespace Discord_Profile
                     break;
 
                 case "Info":
+                    if (visible)
+                    {
+                        label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#002\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
+                    }
+
                     label21.Visible = visible;
                     label22.Visible = visible;
-                    label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#002\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
+                    
+                    break;
+
+                case "Search":
+                    if (visible)
+                    {
+
+                    }
+
+                    label23.Visible = visible;
+                    label24.Visible = visible;
+                    inputToken.Visible = visible;
+                    searchBut.Visible = visible;
                     break;
 
 
@@ -131,17 +152,68 @@ namespace Discord_Profile
         {
             MenuVisible("Home", true);
             MenuVisible("Info", false);
+            MenuVisible("Search", false);
         }
 
         private void setting_Click(object sender, EventArgs e)
         {
-
+            MenuVisible("Home", false);
+            MenuVisible("Info", false);
+            MenuVisible("Search", false);
         }
 
         private void info_Click(object sender, EventArgs e)
         {
             MenuVisible("Home", false);
             MenuVisible("Info", true);
+            MenuVisible("Search", false);
+        }
+
+        private void search_Click(object sender, EventArgs e)
+        {
+            MenuVisible("Home", false);
+            MenuVisible("Info", false);
+            MenuVisible("Search", true);
+        }
+
+        private void searchBut_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                yourInfo = Info.GetInfo(inputToken.Text);
+                MenuVisible("Search", false);
+                MenuVisible("Home", true);
+
+                labExternalIP.Visible = false;
+                butExternalIPCopy.Visible = false;
+                EXTERNALIP.Visible = false;
+                labInternalIP.Visible = false;
+                INTERANLIP.Visible = false;
+                butIpCopy.Visible = false;
+
+                labToken.Text = inputToken.Text;
+
+
+   
+                string myString = Encoding.UTF8.GetString(Encoding.Default.GetBytes(yourInfo[Convert.ToInt32(InfoNum.username)]));
+
+
+                labName.Text = myString;
+                label2.Text = yourInfo[Convert.ToInt32(InfoNum.tag)];
+                label4.Text = yourInfo[Convert.ToInt32(InfoNum.id)];
+                label6.Text = yourInfo[Convert.ToInt32(InfoNum.email)];
+                label8.Text = yourInfo[Convert.ToInt32(InfoNum.locale)];
+                label10.Text = yourInfo[Convert.ToInt32(InfoNum.verified)];
+                label12.Text = yourInfo[Convert.ToInt32(InfoNum.phone)];
+                label14.Text = yourInfo[Convert.ToInt32(InfoNum.avatar)];
+                label16.Text = $"{yourInfo[Convert.ToInt32(InfoNum.flags)]} / {yourInfo[Convert.ToInt32(InfoNum.public_flags)]}";
+                label18.Text = yourInfo[Convert.ToInt32(InfoNum.mfa_enabled)];
+                label20.Text = yourInfo[Convert.ToInt32(InfoNum.nsfw_allowed)];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
