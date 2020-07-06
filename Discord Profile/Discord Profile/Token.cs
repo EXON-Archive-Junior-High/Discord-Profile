@@ -86,7 +86,15 @@ namespace Discord_Profile
                 {
                     if (match.Length == tokenLength) //토큰의 문자수는 반드시 59 이므로 이미 선언해논 tokenLength 를 이용
                     {
-                        if (match.ToString().Contains(".")) //토큰에 . 이 반드시 들어가므로 더 확실하게 토큰 거르기
+                        int i = 0;
+                        foreach( var a in match.ToString())
+                        {
+                            if (a == '.')
+                            {
+                                i++;
+                            }
+                        }
+                        if (i == 2)
                         {
                             //토큰을 찾는다면?
                             Console.WriteLine($"Token = {match.ToString()}");

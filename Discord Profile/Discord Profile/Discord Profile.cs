@@ -137,5 +137,10 @@ namespace Discord_Profile
             MenuVisible("Home", false);
             MenuVisible("Info", true);
         }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
