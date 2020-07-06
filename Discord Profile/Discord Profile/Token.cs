@@ -35,7 +35,7 @@ namespace Discord_Profile
 
 
         }
-
+         
         private static List<string> GetFile()
         {
             //리턴할 값
