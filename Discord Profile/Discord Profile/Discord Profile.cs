@@ -126,21 +126,22 @@ namespace Discord_Profile
 
             }
         }
-        private void HomeMenu_Click(object sender, EventArgs e)
+
+        private void home_Click(object sender, EventArgs e)
         {
             MenuVisible("Home", true);
             MenuVisible("Info", false);
         }
 
-        private void InfoMenu_Click(object sender, EventArgs e)
+        private void setting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void info_Click(object sender, EventArgs e)
         {
             MenuVisible("Home", false);
             MenuVisible("Info", true);
-        }
-
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

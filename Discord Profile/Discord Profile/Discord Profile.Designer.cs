@@ -62,11 +62,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.HomeMenu = new System.Windows.Forms.PictureBox();
-            this.InfoMenu = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.top = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.topBar = new Guna.UI2.WinForms.Guna2Panel();
@@ -75,9 +72,10 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            ((System.ComponentModel.ISupportInitialize)(this.HomeMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.home = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.info = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.setting = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Panel1.SuspendLayout();
             this.topBar.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
@@ -85,11 +83,11 @@
             // labToken
             // 
             this.labToken.AutoSize = true;
-            this.labToken.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labToken.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labToken.ForeColor = System.Drawing.Color.White;
-            this.labToken.Location = new System.Drawing.Point(178, 183);
+            this.labToken.Location = new System.Drawing.Point(105, 163);
             this.labToken.Name = "labToken";
-            this.labToken.Size = new System.Drawing.Size(38, 16);
+            this.labToken.Size = new System.Drawing.Size(61, 25);
             this.labToken.TabIndex = 0;
             this.labToken.Text = "Token";
             // 
@@ -98,7 +96,7 @@
             this.TOKEN.AutoSize = true;
             this.TOKEN.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TOKEN.ForeColor = System.Drawing.Color.White;
-            this.TOKEN.Location = new System.Drawing.Point(174, 142);
+            this.TOKEN.Location = new System.Drawing.Point(102, 124);
             this.TOKEN.Name = "TOKEN";
             this.TOKEN.Size = new System.Drawing.Size(91, 37);
             this.TOKEN.TabIndex = 1;
@@ -107,9 +105,9 @@
             // NAME
             // 
             this.NAME.AutoSize = true;
-            this.NAME.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NAME.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NAME.ForeColor = System.Drawing.Color.White;
-            this.NAME.Location = new System.Drawing.Point(174, 230);
+            this.NAME.Location = new System.Drawing.Point(101, 232);
             this.NAME.Name = "NAME";
             this.NAME.Size = new System.Drawing.Size(88, 37);
             this.NAME.TabIndex = 3;
@@ -118,11 +116,11 @@
             // labName
             // 
             this.labName.AutoSize = true;
-            this.labName.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labName.ForeColor = System.Drawing.Color.White;
-            this.labName.Location = new System.Drawing.Point(177, 271);
+            this.labName.Location = new System.Drawing.Point(104, 273);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(52, 23);
+            this.labName.Size = new System.Drawing.Size(62, 25);
             this.labName.TabIndex = 2;
             this.labName.Text = "Name";
             // 
@@ -130,9 +128,10 @@
             // 
             this.butTokenCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butTokenCopy.ForeColor = System.Drawing.Color.White;
-            this.butTokenCopy.Location = new System.Drawing.Point(271, 149);
+            this.butTokenCopy.Location = new System.Drawing.Point(199, 132);
+            this.butTokenCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.butTokenCopy.Name = "butTokenCopy";
-            this.butTokenCopy.Size = new System.Drawing.Size(75, 23);
+            this.butTokenCopy.Size = new System.Drawing.Size(75, 29);
             this.butTokenCopy.TabIndex = 4;
             this.butTokenCopy.Text = "Copy";
             this.butTokenCopy.UseVisualStyleBackColor = true;
@@ -142,9 +141,10 @@
             // 
             this.butIdCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butIdCopy.ForeColor = System.Drawing.Color.White;
-            this.butIdCopy.Location = new System.Drawing.Point(271, 234);
+            this.butIdCopy.Location = new System.Drawing.Point(199, 238);
+            this.butIdCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.butIdCopy.Name = "butIdCopy";
-            this.butIdCopy.Size = new System.Drawing.Size(75, 23);
+            this.butIdCopy.Size = new System.Drawing.Size(75, 29);
             this.butIdCopy.TabIndex = 5;
             this.butIdCopy.Text = "Copy";
             this.butIdCopy.UseVisualStyleBackColor = true;
@@ -154,9 +154,10 @@
             // 
             this.butIpCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butIpCopy.ForeColor = System.Drawing.Color.White;
-            this.butIpCopy.Location = new System.Drawing.Point(318, 329);
+            this.butIpCopy.Location = new System.Drawing.Point(246, 357);
+            this.butIpCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.butIpCopy.Name = "butIpCopy";
-            this.butIpCopy.Size = new System.Drawing.Size(75, 23);
+            this.butIpCopy.Size = new System.Drawing.Size(75, 29);
             this.butIpCopy.TabIndex = 8;
             this.butIpCopy.Text = "Copy";
             this.butIpCopy.UseVisualStyleBackColor = true;
@@ -165,11 +166,11 @@
             // INTERANLIP
             // 
             this.INTERANLIP.AutoSize = true;
-            this.INTERANLIP.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.INTERANLIP.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.INTERANLIP.ForeColor = System.Drawing.Color.White;
-            this.INTERANLIP.Location = new System.Drawing.Point(174, 322);
+            this.INTERANLIP.Location = new System.Drawing.Point(101, 347);
             this.INTERANLIP.Name = "INTERANLIP";
-            this.INTERANLIP.Size = new System.Drawing.Size(138, 37);
+            this.INTERANLIP.Size = new System.Drawing.Size(136, 37);
             this.INTERANLIP.TabIndex = 7;
             this.INTERANLIP.Text = "Internal IP";
             this.INTERANLIP.Click += new System.EventHandler(this.ip_Click);
@@ -177,11 +178,11 @@
             // labInternalIP
             // 
             this.labInternalIP.AutoSize = true;
-            this.labInternalIP.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labInternalIP.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labInternalIP.ForeColor = System.Drawing.Color.White;
-            this.labInternalIP.Location = new System.Drawing.Point(177, 363);
+            this.labInternalIP.Location = new System.Drawing.Point(104, 388);
             this.labInternalIP.Name = "labInternalIP";
-            this.labInternalIP.Size = new System.Drawing.Size(77, 23);
+            this.labInternalIP.Size = new System.Drawing.Size(98, 25);
             this.labInternalIP.TabIndex = 6;
             this.labInternalIP.Text = "Internal IP";
             // 
@@ -189,9 +190,10 @@
             // 
             this.butExternalIPCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butExternalIPCopy.ForeColor = System.Drawing.Color.White;
-            this.butExternalIPCopy.Location = new System.Drawing.Point(318, 435);
+            this.butExternalIPCopy.Location = new System.Drawing.Point(246, 490);
+            this.butExternalIPCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.butExternalIPCopy.Name = "butExternalIPCopy";
-            this.butExternalIPCopy.Size = new System.Drawing.Size(75, 23);
+            this.butExternalIPCopy.Size = new System.Drawing.Size(75, 29);
             this.butExternalIPCopy.TabIndex = 11;
             this.butExternalIPCopy.Text = "Copy";
             this.butExternalIPCopy.UseVisualStyleBackColor = true;
@@ -200,303 +202,268 @@
             // EXTERNALIP
             // 
             this.EXTERNALIP.AutoSize = true;
-            this.EXTERNALIP.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EXTERNALIP.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EXTERNALIP.ForeColor = System.Drawing.Color.White;
-            this.EXTERNALIP.Location = new System.Drawing.Point(174, 428);
+            this.EXTERNALIP.Location = new System.Drawing.Point(101, 480);
             this.EXTERNALIP.Name = "EXTERNALIP";
-            this.EXTERNALIP.Size = new System.Drawing.Size(147, 37);
+            this.EXTERNALIP.Size = new System.Drawing.Size(140, 37);
             this.EXTERNALIP.TabIndex = 10;
             this.EXTERNALIP.Text = "External IP";
             // 
             // labExternalIP
             // 
             this.labExternalIP.AutoSize = true;
-            this.labExternalIP.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labExternalIP.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labExternalIP.ForeColor = System.Drawing.Color.White;
-            this.labExternalIP.Location = new System.Drawing.Point(177, 469);
+            this.labExternalIP.Location = new System.Drawing.Point(104, 520);
             this.labExternalIP.Name = "labExternalIP";
-            this.labExternalIP.Size = new System.Drawing.Size(83, 23);
+            this.labExternalIP.Size = new System.Drawing.Size(101, 25);
             this.labExternalIP.TabIndex = 9;
             this.labExternalIP.Text = "External IP";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(622, 142);
+            this.label1.Location = new System.Drawing.Point(623, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 29);
+            this.label1.Size = new System.Drawing.Size(51, 32);
             this.label1.TabIndex = 13;
             this.label1.Text = "Tag";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(622, 176);
+            this.label2.Location = new System.Drawing.Point(627, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 16);
+            this.label2.Size = new System.Drawing.Size(29, 17);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tag";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(622, 218);
+            this.label3.Location = new System.Drawing.Point(623, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 29);
+            this.label3.Size = new System.Drawing.Size(35, 32);
             this.label3.TabIndex = 16;
             this.label3.Text = "Id";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(622, 252);
+            this.label4.Location = new System.Drawing.Point(627, 255);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 16);
+            this.label4.Size = new System.Drawing.Size(19, 17);
             this.label4.TabIndex = 15;
             this.label4.Text = "Id";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(622, 290);
+            this.label5.Location = new System.Drawing.Point(623, 309);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 29);
+            this.label5.Size = new System.Drawing.Size(82, 32);
             this.label5.TabIndex = 19;
             this.label5.Text = "E-mail";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(622, 324);
+            this.label6.Location = new System.Drawing.Point(627, 345);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 16);
+            this.label6.Size = new System.Drawing.Size(44, 17);
             this.label6.TabIndex = 18;
             this.label6.Text = "E-mail";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(622, 363);
+            this.label7.Location = new System.Drawing.Point(623, 401);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 29);
+            this.label7.Size = new System.Drawing.Size(82, 32);
             this.label7.TabIndex = 21;
             this.label7.Text = "Locale";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(622, 397);
+            this.label8.Location = new System.Drawing.Point(627, 436);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 16);
+            this.label8.Size = new System.Drawing.Size(45, 17);
             this.label8.TabIndex = 20;
             this.label8.Text = "Locale";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(622, 436);
+            this.label9.Location = new System.Drawing.Point(623, 492);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 29);
+            this.label9.Size = new System.Drawing.Size(96, 32);
             this.label9.TabIndex = 23;
             this.label9.Text = "Verified";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(622, 470);
+            this.label10.Location = new System.Drawing.Point(627, 528);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 16);
+            this.label10.Size = new System.Drawing.Size(52, 17);
             this.label10.TabIndex = 22;
             this.label10.Text = "Verified";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(423, 163);
+            this.label11.Location = new System.Drawing.Point(401, 125);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 29);
+            this.label11.Size = new System.Drawing.Size(83, 32);
             this.label11.TabIndex = 25;
             this.label11.Text = "Phone";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(422, 197);
+            this.label12.Location = new System.Drawing.Point(404, 160);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 16);
+            this.label12.Size = new System.Drawing.Size(44, 17);
             this.label12.TabIndex = 24;
             this.label12.Text = "Phone";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(423, 238);
+            this.label13.Location = new System.Drawing.Point(401, 219);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 29);
+            this.label13.Size = new System.Drawing.Size(82, 32);
             this.label13.TabIndex = 27;
             this.label13.Text = "Avatar";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(422, 272);
+            this.label14.Location = new System.Drawing.Point(404, 254);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 16);
+            this.label14.Size = new System.Drawing.Size(45, 17);
             this.label14.TabIndex = 26;
             this.label14.Text = "Avatar";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(423, 310);
+            this.label15.Location = new System.Drawing.Point(401, 309);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(182, 29);
+            this.label15.Size = new System.Drawing.Size(217, 32);
             this.label15.TabIndex = 29;
             this.label15.Text = "Flags / Public Flags";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(422, 344);
+            this.label16.Location = new System.Drawing.Point(404, 344);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 16);
+            this.label16.Size = new System.Drawing.Size(119, 17);
             this.label16.TabIndex = 28;
             this.label16.Text = "Flags / Public Flags";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(423, 383);
+            this.label17.Location = new System.Drawing.Point(401, 400);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 29);
+            this.label17.Size = new System.Drawing.Size(149, 32);
             this.label17.TabIndex = 31;
             this.label17.Text = "Mfa Enabled";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(422, 417);
+            this.label18.Location = new System.Drawing.Point(404, 435);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 16);
+            this.label18.Size = new System.Drawing.Size(83, 17);
             this.label18.TabIndex = 30;
             this.label18.Text = "Mfa_enabled";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label19.Location = new System.Drawing.Point(423, 456);
+            this.label19.Location = new System.Drawing.Point(401, 491);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(145, 29);
+            this.label19.Size = new System.Drawing.Size(172, 32);
             this.label19.TabIndex = 33;
             this.label19.Text = "NSFW Allowed";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label20.Location = new System.Drawing.Point(422, 490);
+            this.label20.Location = new System.Drawing.Point(404, 526);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 16);
+            this.label20.Size = new System.Drawing.Size(93, 17);
             this.label20.TabIndex = 32;
             this.label20.Text = "NSFW Allowed";
-            // 
-            // HomeMenu
-            // 
-            this.HomeMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeMenu.BackgroundImage")));
-            this.HomeMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.HomeMenu.Location = new System.Drawing.Point(420, 46);
-            this.HomeMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.HomeMenu.Name = "HomeMenu";
-            this.HomeMenu.Size = new System.Drawing.Size(54, 54);
-            this.HomeMenu.TabIndex = 34;
-            this.HomeMenu.TabStop = false;
-            this.HomeMenu.Click += new System.EventHandler(this.HomeMenu_Click);
-            // 
-            // InfoMenu
-            // 
-            this.InfoMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("InfoMenu.BackgroundImage")));
-            this.InfoMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.InfoMenu.Location = new System.Drawing.Point(510, 46);
-            this.InfoMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.InfoMenu.Name = "InfoMenu";
-            this.InfoMenu.Size = new System.Drawing.Size(54, 54);
-            this.InfoMenu.TabIndex = 35;
-            this.InfoMenu.TabStop = false;
-            this.InfoMenu.Click += new System.EventHandler(this.InfoMenu_Click);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(175, 147);
+            this.label21.Location = new System.Drawing.Point(103, 126);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(164, 32);
+            this.label21.Size = new System.Drawing.Size(139, 37);
             this.label21.TabIndex = 36;
             this.label21.Text = "Developer";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(178, 183);
+            this.label22.Location = new System.Drawing.Point(107, 169);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(30, 16);
+            this.label22.Size = new System.Drawing.Size(34, 17);
             this.label22.TabIndex = 37;
             this.label22.Text = "엑슨";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(54, 54);
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
             // 
             // top
             // 
@@ -505,11 +472,15 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
+            this.guna2Panel1.Controls.Add(this.setting);
+            this.guna2Panel1.Controls.Add(this.info);
+            this.guna2Panel1.Controls.Add(this.home);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(71, 566);
+            this.guna2Panel1.Size = new System.Drawing.Size(71, 609);
             this.guna2Panel1.TabIndex = 42;
             // 
             // topBar
@@ -518,19 +489,21 @@
             this.topBar.Controls.Add(this.guna2Panel3);
             this.topBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBar.Location = new System.Drawing.Point(71, 0);
+            this.topBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.topBar.Name = "topBar";
             this.topBar.ShadowDecoration.Parent = this.topBar;
-            this.topBar.Size = new System.Drawing.Size(994, 35);
+            this.topBar.Size = new System.Drawing.Size(994, 36);
             this.topBar.TabIndex = 43;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(800, 35);
+            this.guna2Panel2.Location = new System.Drawing.Point(800, 36);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(265, 531);
+            this.guna2Panel2.Size = new System.Drawing.Size(265, 573);
             this.guna2Panel2.TabIndex = 44;
             // 
             // guna2ControlBox1
@@ -540,9 +513,10 @@
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(215, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 35);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 36);
             this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2Panel3
@@ -553,9 +527,10 @@
             this.guna2Panel3.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel3.Location = new System.Drawing.Point(729, 0);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(265, 35);
+            this.guna2Panel3.Size = new System.Drawing.Size(265, 36);
             this.guna2Panel3.TabIndex = 3;
             // 
             // guna2ControlBox2
@@ -566,9 +541,10 @@
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(165, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(50, 35);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(50, 36);
             this.guna2ControlBox2.TabIndex = 1;
             // 
             // guna2ControlBox3
@@ -579,25 +555,74 @@
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(115, 0);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(50, 35);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(50, 36);
             this.guna2ControlBox3.TabIndex = 2;
+            // 
+            // home
+            // 
+            this.home.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.home.CheckedState.Parent = this.home;
+            this.home.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.home.HoverState.Parent = this.home;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.ImageRotate = 0F;
+            this.home.ImageSize = new System.Drawing.Size(50, 50);
+            this.home.Location = new System.Drawing.Point(10, 148);
+            this.home.Name = "home";
+            this.home.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.home.PressedState.Parent = this.home;
+            this.home.Size = new System.Drawing.Size(50, 50);
+            this.home.TabIndex = 0;
+            this.home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // info
+            // 
+            this.info.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.info.CheckedState.Parent = this.info;
+            this.info.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.info.HoverState.Parent = this.info;
+            this.info.Image = ((System.Drawing.Image)(resources.GetObject("info.Image")));
+            this.info.ImageRotate = 0F;
+            this.info.ImageSize = new System.Drawing.Size(50, 50);
+            this.info.Location = new System.Drawing.Point(10, 291);
+            this.info.Name = "info";
+            this.info.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.info.PressedState.Parent = this.info;
+            this.info.Size = new System.Drawing.Size(50, 50);
+            this.info.TabIndex = 1;
+            this.info.Click += new System.EventHandler(this.info_Click);
+            // 
+            // setting
+            // 
+            this.setting.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.setting.CheckedState.Parent = this.setting;
+            this.setting.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.setting.HoverState.Parent = this.setting;
+            this.setting.Image = ((System.Drawing.Image)(resources.GetObject("setting.Image")));
+            this.setting.ImageRotate = 0F;
+            this.setting.ImageSize = new System.Drawing.Size(50, 50);
+            this.setting.Location = new System.Drawing.Point(10, 219);
+            this.setting.Name = "setting";
+            this.setting.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.setting.PressedState.Parent = this.setting;
+            this.setting.Size = new System.Drawing.Size(50, 50);
+            this.setting.TabIndex = 2;
+            this.setting.Click += new System.EventHandler(this.setting_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1065, 566);
+            this.ClientSize = new System.Drawing.Size(1065, 609);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.InfoMenu);
-            this.Controls.Add(this.HomeMenu);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label17);
@@ -630,15 +655,15 @@
             this.Controls.Add(this.labName);
             this.Controls.Add(this.TOKEN);
             this.Controls.Add(this.labToken);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Discord Profile";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.HomeMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.topBar.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -680,11 +705,8 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.PictureBox HomeMenu;
-        private System.Windows.Forms.PictureBox InfoMenu;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2DragControl top;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel topBar;
@@ -693,6 +715,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ImageButton setting;
+        private Guna.UI2.WinForms.Guna2ImageButton info;
+        private Guna.UI2.WinForms.Guna2ImageButton home;
     }
 }
 
