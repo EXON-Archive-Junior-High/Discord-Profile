@@ -24,14 +24,13 @@
 - Phone (폰)
 - Avatar (아바타)
 - Flags / Public Flags
-- Mfa Enbabled
-- NSFW Allowed
+- Mfa Enbabled (2단계 인증)
+- NSFW Allowed (nsfw 채널 허용)
 
 ## 설치
 2020/6/7
-[v1.0](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
-초기 릴리즈 파일
+[Beta](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
+초기 릴리즈 파일 (401 ERROR)
 
 # 도움을 주신 분들
 <a href="https://github.com/muno9748">muno9748</a> <br>
-디스코드의 api 사용 방법을 알려주셨습니다.
