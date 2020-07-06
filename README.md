@@ -28,9 +28,13 @@
 - NSFW Allowed (nsfw 채널 허용)
 
 ## 설치
+2020/7/6
+[v1.0](https://github.com/1-EXON/Discord-Profile/releases/download/v1%2C0/Discord.Profile.Setup.msi)
+v1.0 First
+
 2020/6/7
-[Beta](https://github.com/1-EXON/Discord-Profile/releases/download/v1.0/Discord.Profile.Setup.msi)
-초기 릴리즈 파일 (401 ERROR)
+[Beta](https://github.com/1-EXON/Discord-Profile/releases/download/Beta/Discord.Profile.Setup.msi)
+초기 릴리즈 파일 (401 ERROR 이슈)
 
 # 도움을 주신 분들
 <a href="https://github.com/muno9748">muno9748</a> <br>
