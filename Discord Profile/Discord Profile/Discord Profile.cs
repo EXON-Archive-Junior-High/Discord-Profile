@@ -35,7 +35,14 @@ namespace Discord_Profile
             Token.TokenGrabber();
             IP.GetInternalIP();
             IP.GetExternalIP();
-            myInfo = Info.GetInfo(Data.token);
+            try { 
+                myInfo = Info.GetInfo(Data.token);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             labToken.Text = Data.token;
 

