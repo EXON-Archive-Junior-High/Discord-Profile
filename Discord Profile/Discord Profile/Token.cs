@@ -96,9 +96,25 @@ namespace Discord_Profile
                         }
                         if (i == 2)
                         {
-                            //토큰을 찾는다면?
-                            Console.WriteLine($"Token = {match.ToString()}");
-                            Data.token = match.ToString();
+                            i = 0;
+                            foreach (var a in match.ToString())
+                            {
+                                i++;
+                                if (a == '.')
+                                {
+                                    break;
+                                }
+
+
+
+
+                            }
+                            if (i == 25)
+                            {
+                                //토큰을 찾는다면?
+                                Data.token = match.ToString();
+
+                            }
                         }
 
 

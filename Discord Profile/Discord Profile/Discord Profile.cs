@@ -86,6 +86,25 @@ namespace Discord_Profile
             switch (menu)
             {
                 case "Home":
+                    if (visible)
+                    {
+                        labToken.Text = Data.token;
+
+                        labInternalIP.Text = Data.internalIP;
+                        labExternalIP.Text = Data.externalIP;
+
+                        labName.Text = myInfo[Convert.ToInt32(InfoNum.username)];
+                        label2.Text = myInfo[Convert.ToInt32(InfoNum.tag)];
+                        label4.Text = myInfo[Convert.ToInt32(InfoNum.id)];
+                        label6.Text = myInfo[Convert.ToInt32(InfoNum.email)];
+                        label8.Text = myInfo[Convert.ToInt32(InfoNum.locale)];
+                        label10.Text = myInfo[Convert.ToInt32(InfoNum.verified)];
+                        label12.Text = myInfo[Convert.ToInt32(InfoNum.phone)];
+                        label14.Text = myInfo[Convert.ToInt32(InfoNum.avatar)];
+                        label16.Text = $"{myInfo[Convert.ToInt32(InfoNum.flags)]} / {myInfo[Convert.ToInt32(InfoNum.public_flags)]}";
+                        label18.Text = myInfo[Convert.ToInt32(InfoNum.mfa_enabled)];
+                        label20.Text = myInfo[Convert.ToInt32(InfoNum.nsfw_allowed)];
+                    }
                     labExternalIP.Visible = visible;
                     butExternalIPCopy.Visible = visible;
                     EXTERNALIP.Visible = visible;
