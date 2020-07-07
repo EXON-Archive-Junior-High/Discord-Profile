@@ -191,7 +191,7 @@ namespace Discord_Profile
         private void search_Click(object sender, EventArgs e)
         {
             MenuVisible("Home", false);
-            MenuVisible("Info", false);
+            MenuVisible("Info", false); 
             MenuVisible("Search", true);
         }
 
