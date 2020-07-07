@@ -80,7 +80,7 @@ namespace Discord_Profile
 
         private void ip_Click(object sender, EventArgs e)
         {
-
+            SetInfo("내부 아이피", "자신의 내부 아이피입니다.");
         }
 
         private void butExternalIPCopy_Click(object sender, EventArgs e)
@@ -150,7 +150,7 @@ namespace Discord_Profile
                 case "Info":
                     if (visible)
                     {
-                        label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#002\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
+                        label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#0062\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
                     }
 
                     label21.Visible = visible;
@@ -238,6 +238,78 @@ namespace Discord_Profile
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            SetInfo("태그", "디스코드 사용자의 토큰입니다.\n예)#0062");
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            SetInfo("핸드폰", "디스코드 계정에 연결된\n핸드폰의 전화번호입니다.");
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            SetInfo("프로필", "프로필 사진의 고유 텍스트입니다.\nhttps://cdn.discordapp.com/avatars\n/사용자 아이디/프로필.png\n형식으로 프로필 사진을 볼 수 있습니다.");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            SetInfo("아이디", "디스코드 사용자 고유의 아이디입니다.");
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            SetInfo("플레그", "컴퓨터에서 무언가를 기억하거나 또는 \n다른 프로그램에게 약속된 신호를 \n남기기 위한 용도로 프로그램에 사용되는 \n미리 정의된 데이터입니다.");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            SetInfo("이메일", "디스코드 계정에 연동된 이메일입니다.");
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            SetInfo("나라(위치)", "디스코드 계정에 등록된 나라입니다.");
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            SetInfo("2단계 인증", "디스코드 계정이 2단계 인증을 \n활성했는지 알려줍니다.");
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            SetInfo("인증", "디스코드 계정이 인증됐는지 확인합니다.");
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+            SetInfo("부적절한 채널 허용", "디스코드 계정이 NSFW 채널을 \n활성화 했는지에 대한 여부입니다.");
+        }
+
+        private void EXTERNALIP_Click(object sender, EventArgs e)
+        {
+            SetInfo("외부 아이피", "자신의 외부 아이피입니다.\n다른 사람에게 알리지 마십시오.");
+        }
+
+        private void NAME_Click(object sender, EventArgs e)
+        {
+            SetInfo("이름", "디스코드 사용자의 이름입니다.");
+        }
+
+        private void TOKEN_Click(object sender, EventArgs e)
+        {
+            SetInfo("토큰", "디스코드 고유의 토큰입니다.\n절대로 다른 사람에게 알리지 마십시오.\n해킹의 위협이 있습니다.");
+
+        }
+
+        private void SetInfo(string a, string b)
+        {
+            label25.Text = a;
+            label26.Text = b;
         }
     }
 }

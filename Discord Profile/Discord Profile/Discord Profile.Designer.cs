@@ -65,25 +65,28 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.top = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.topBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.home = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.info = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.setting = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.shadow = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.search = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.setting = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.info = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.home = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.shadow = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.inputToken = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.searchBut = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1.SuspendLayout();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.topBar.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labToken
@@ -107,6 +110,7 @@
             this.TOKEN.Size = new System.Drawing.Size(91, 37);
             this.TOKEN.TabIndex = 1;
             this.TOKEN.Text = "Token";
+            this.TOKEN.Click += new System.EventHandler(this.TOKEN_Click);
             // 
             // NAME
             // 
@@ -118,6 +122,7 @@
             this.NAME.Size = new System.Drawing.Size(88, 37);
             this.NAME.TabIndex = 3;
             this.NAME.Text = "Name";
+            this.NAME.Click += new System.EventHandler(this.NAME_Click);
             // 
             // labName
             // 
@@ -215,6 +220,7 @@
             this.EXTERNALIP.Size = new System.Drawing.Size(140, 37);
             this.EXTERNALIP.TabIndex = 10;
             this.EXTERNALIP.Text = "External IP";
+            this.EXTERNALIP.Click += new System.EventHandler(this.EXTERNALIP_Click);
             // 
             // labExternalIP
             // 
@@ -237,6 +243,7 @@
             this.label1.Size = new System.Drawing.Size(51, 32);
             this.label1.TabIndex = 13;
             this.label1.Text = "Tag";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -259,6 +266,7 @@
             this.label3.Size = new System.Drawing.Size(35, 32);
             this.label3.TabIndex = 16;
             this.label3.Text = "Id";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -281,6 +289,7 @@
             this.label5.Size = new System.Drawing.Size(82, 32);
             this.label5.TabIndex = 19;
             this.label5.Text = "E-mail";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -303,6 +312,7 @@
             this.label7.Size = new System.Drawing.Size(82, 32);
             this.label7.TabIndex = 21;
             this.label7.Text = "Locale";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -325,6 +335,7 @@
             this.label9.Size = new System.Drawing.Size(96, 32);
             this.label9.TabIndex = 23;
             this.label9.Text = "Verified";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -347,6 +358,7 @@
             this.label11.Size = new System.Drawing.Size(83, 32);
             this.label11.TabIndex = 25;
             this.label11.Text = "Phone";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -369,6 +381,7 @@
             this.label13.Size = new System.Drawing.Size(82, 32);
             this.label13.TabIndex = 27;
             this.label13.Text = "Avatar";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -391,6 +404,7 @@
             this.label15.Size = new System.Drawing.Size(217, 32);
             this.label15.TabIndex = 29;
             this.label15.Text = "Flags / Public Flags";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
@@ -413,6 +427,7 @@
             this.label17.Size = new System.Drawing.Size(149, 32);
             this.label17.TabIndex = 31;
             this.label17.Text = "Mfa Enabled";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -436,6 +451,7 @@
             this.label19.Size = new System.Drawing.Size(172, 32);
             this.label19.TabIndex = 33;
             this.label19.Text = "NSFW Allowed";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 
@@ -454,7 +470,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(92, 38);
+            this.label21.Location = new System.Drawing.Point(92, 40);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(139, 37);
             this.label21.TabIndex = 36;
@@ -465,7 +481,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(91, 77);
+            this.label22.Location = new System.Drawing.Point(96, 77);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(34, 17);
             this.label22.TabIndex = 37;
@@ -474,21 +490,6 @@
             // top
             // 
             this.top.TargetControl = this.topBar;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
-            this.guna2Panel1.Controls.Add(this.search);
-            this.guna2Panel1.Controls.Add(this.setting);
-            this.guna2Panel1.Controls.Add(this.info);
-            this.guna2Panel1.Controls.Add(this.home);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(71, 558);
-            this.guna2Panel1.TabIndex = 42;
             // 
             // topBar
             // 
@@ -501,30 +502,6 @@
             this.topBar.ShadowDecoration.Parent = this.topBar;
             this.topBar.Size = new System.Drawing.Size(994, 36);
             this.topBar.TabIndex = 43;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(800, 36);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(265, 522);
-            this.guna2Panel2.TabIndex = 44;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(215, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 36);
-            this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2Panel3
             // 
@@ -540,20 +517,6 @@
             this.guna2Panel3.Size = new System.Drawing.Size(265, 36);
             this.guna2Panel3.TabIndex = 3;
             // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(165, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(50, 36);
-            this.guna2ControlBox2.TabIndex = 1;
-            // 
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
@@ -568,59 +531,47 @@
             this.guna2ControlBox3.Size = new System.Drawing.Size(50, 36);
             this.guna2ControlBox3.TabIndex = 2;
             // 
-            // home
+            // guna2ControlBox2
             // 
-            this.home.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.home.CheckedState.Parent = this.home;
-            this.home.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("home.HoverState.Image")));
-            this.home.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.home.HoverState.Parent = this.home;
-            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
-            this.home.ImageRotate = 0F;
-            this.home.ImageSize = new System.Drawing.Size(40, 40);
-            this.home.Location = new System.Drawing.Point(12, 137);
-            this.home.Name = "home";
-            this.home.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.home.PressedState.Parent = this.home;
-            this.home.Size = new System.Drawing.Size(50, 50);
-            this.home.TabIndex = 0;
-            this.home.Click += new System.EventHandler(this.home_Click);
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(165, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(50, 36);
+            this.guna2ControlBox2.TabIndex = 1;
             // 
-            // info
+            // guna2ControlBox1
             // 
-            this.info.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.info.CheckedState.Parent = this.info;
-            this.info.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("info.HoverState.Image")));
-            this.info.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.info.HoverState.Parent = this.info;
-            this.info.Image = ((System.Drawing.Image)(resources.GetObject("info.Image")));
-            this.info.ImageRotate = 0F;
-            this.info.ImageSize = new System.Drawing.Size(40, 40);
-            this.info.Location = new System.Drawing.Point(12, 353);
-            this.info.Name = "info";
-            this.info.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.info.PressedState.Parent = this.info;
-            this.info.Size = new System.Drawing.Size(50, 50);
-            this.info.TabIndex = 1;
-            this.info.Click += new System.EventHandler(this.info_Click);
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(215, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 36);
+            this.guna2ControlBox1.TabIndex = 0;
             // 
-            // setting
+            // guna2Panel1
             // 
-            this.setting.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.setting.CheckedState.Parent = this.setting;
-            this.setting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("setting.HoverState.Image")));
-            this.setting.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.setting.HoverState.Parent = this.setting;
-            this.setting.Image = ((System.Drawing.Image)(resources.GetObject("setting.Image")));
-            this.setting.ImageRotate = 0F;
-            this.setting.ImageSize = new System.Drawing.Size(40, 40);
-            this.setting.Location = new System.Drawing.Point(12, 281);
-            this.setting.Name = "setting";
-            this.setting.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.setting.PressedState.Parent = this.setting;
-            this.setting.Size = new System.Drawing.Size(50, 50);
-            this.setting.TabIndex = 2;
-            this.setting.Click += new System.EventHandler(this.setting_Click);
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
+            this.guna2Panel1.Controls.Add(this.search);
+            this.guna2Panel1.Controls.Add(this.setting);
+            this.guna2Panel1.Controls.Add(this.info);
+            this.guna2Panel1.Controls.Add(this.home);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(71, 558);
+            this.guna2Panel1.TabIndex = 42;
             // 
             // search
             // 
@@ -640,6 +591,73 @@
             this.search.TabIndex = 3;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
+            // setting
+            // 
+            this.setting.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.setting.CheckedState.Parent = this.setting;
+            this.setting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("setting.HoverState.Image")));
+            this.setting.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.setting.HoverState.Parent = this.setting;
+            this.setting.Image = ((System.Drawing.Image)(resources.GetObject("setting.Image")));
+            this.setting.ImageRotate = 0F;
+            this.setting.ImageSize = new System.Drawing.Size(40, 40);
+            this.setting.Location = new System.Drawing.Point(12, 281);
+            this.setting.Name = "setting";
+            this.setting.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.setting.PressedState.Parent = this.setting;
+            this.setting.Size = new System.Drawing.Size(50, 50);
+            this.setting.TabIndex = 2;
+            this.setting.Click += new System.EventHandler(this.setting_Click);
+            // 
+            // info
+            // 
+            this.info.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.info.CheckedState.Parent = this.info;
+            this.info.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("info.HoverState.Image")));
+            this.info.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.info.HoverState.Parent = this.info;
+            this.info.Image = ((System.Drawing.Image)(resources.GetObject("info.Image")));
+            this.info.ImageRotate = 0F;
+            this.info.ImageSize = new System.Drawing.Size(40, 40);
+            this.info.Location = new System.Drawing.Point(12, 353);
+            this.info.Name = "info";
+            this.info.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.info.PressedState.Parent = this.info;
+            this.info.Size = new System.Drawing.Size(50, 50);
+            this.info.TabIndex = 1;
+            this.info.Click += new System.EventHandler(this.info_Click);
+            // 
+            // home
+            // 
+            this.home.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.home.CheckedState.Parent = this.home;
+            this.home.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("home.HoverState.Image")));
+            this.home.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.home.HoverState.Parent = this.home;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.ImageRotate = 0F;
+            this.home.ImageSize = new System.Drawing.Size(40, 40);
+            this.home.Location = new System.Drawing.Point(12, 137);
+            this.home.Name = "home";
+            this.home.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.home.PressedState.Parent = this.home;
+            this.home.Size = new System.Drawing.Size(50, 50);
+            this.home.TabIndex = 0;
+            this.home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(35)))));
+            this.guna2Panel2.Controls.Add(this.label26);
+            this.guna2Panel2.Controls.Add(this.label25);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(800, 36);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(265, 522);
+            this.guna2Panel2.TabIndex = 44;
+            // 
             // inputToken
             // 
             this.inputToken.BorderRadius = 15;
@@ -654,7 +672,7 @@
             this.inputToken.FocusedState.Parent = this.inputToken;
             this.inputToken.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.inputToken.HoverState.Parent = this.inputToken;
-            this.inputToken.Location = new System.Drawing.Point(88, 265);
+            this.inputToken.Location = new System.Drawing.Point(94, 263);
             this.inputToken.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inputToken.Name = "inputToken";
             this.inputToken.PasswordChar = '\0';
@@ -702,6 +720,28 @@
             this.searchBut.TabIndex = 48;
             this.searchBut.Text = "Search";
             this.searchBut.Click += new System.EventHandler(this.searchBut_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(3, 26);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(262, 32);
+            this.label25.TabIndex = 49;
+            this.label25.Text = "텍스트를 클릭해보세요";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(6, 58);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(34, 17);
+            this.label26.TabIndex = 50;
+            this.label26.Text = "내용";
             // 
             // Form1
             // 
@@ -758,9 +798,11 @@
             this.Name = "Form1";
             this.Text = "Discord Profile";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.guna2Panel1.ResumeLayout(false);
             this.topBar.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -819,6 +861,8 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2Button searchBut;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
     }
 }
 
