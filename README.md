@@ -32,7 +32,7 @@
 [v1.1](https://github.com/1-EXON/Discord-Profile/releases/download/v1.1/Discord.Profile.Setup.msi)
 v1.0 에 있었던 검색 오류 해결
 
-2020/7/6
+2020/7/7
 [v1.0](https://github.com/1-EXON/Discord-Profile/releases/download/v1%2C0/Discord.Profile.Setup.msi)
 v1.0 First
 
