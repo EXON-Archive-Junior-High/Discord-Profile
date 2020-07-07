@@ -29,6 +29,10 @@
 
 ## 설치
 2020/7/7
+[v1.2](https://github.com/1-EXON/Discord-Profile/releases/download/v1.2/Discord.Profile.Setup.msi)
+더 쉽게 보여주는 기능 추가
+
+2020/7/7
 [v1.1](https://github.com/1-EXON/Discord-Profile/releases/download/v1.1/Discord.Profile.Setup.msi)
 v1.0 에 있었던 검색 오류 해결
 
