@@ -76,13 +76,13 @@
             this.info = new Guna.UI2.WinForms.Guna2ImageButton();
             this.home = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.shadow = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.inputToken = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.searchBut = new Guna.UI2.WinForms.Guna2Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.topBar.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -129,7 +129,7 @@
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labName.ForeColor = System.Drawing.Color.White;
-            this.labName.Location = new System.Drawing.Point(93, 187);
+            this.labName.Location = new System.Drawing.Point(92, 187);
             this.labName.Name = "labName";
             this.labName.Size = new System.Drawing.Size(62, 25);
             this.labName.TabIndex = 2;
@@ -470,7 +470,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(92, 40);
+            this.label21.Location = new System.Drawing.Point(91, 40);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(139, 37);
             this.label21.TabIndex = 36;
@@ -658,6 +658,28 @@
             this.guna2Panel2.Size = new System.Drawing.Size(265, 522);
             this.guna2Panel2.TabIndex = 44;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(6, 58);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(34, 17);
+            this.label26.TabIndex = 50;
+            this.label26.Text = "내용";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(3, 26);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(262, 32);
+            this.label25.TabIndex = 49;
+            this.label25.Text = "텍스트를 클릭해보세요";
+            // 
             // inputToken
             // 
             this.inputToken.BorderRadius = 15;
@@ -720,28 +742,6 @@
             this.searchBut.TabIndex = 48;
             this.searchBut.Text = "Search";
             this.searchBut.Click += new System.EventHandler(this.searchBut_Click);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(3, 26);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(262, 32);
-            this.label25.TabIndex = 49;
-            this.label25.Text = "텍스트를 클릭해보세요";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(6, 58);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(34, 17);
-            this.label26.TabIndex = 50;
-            this.label26.Text = "내용";
             // 
             // Form1
             // 
