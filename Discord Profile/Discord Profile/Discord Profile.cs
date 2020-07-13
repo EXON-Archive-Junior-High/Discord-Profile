@@ -27,6 +27,7 @@ namespace Discord_Profile
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text += " v1.3";
             shadow.SetShadowForm(this);
 
             MenuVisible("Home", true);
