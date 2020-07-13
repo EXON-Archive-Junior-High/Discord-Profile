@@ -28,6 +28,10 @@
 - NSFW Allowed (nsfw 채널 허용)
 
 ## Install
+2020/7/13
+[v1.3](https://github.com/1-EXON/Discord-Profile/releases/download/v1.3/Discord.Profile.Setup.msi)
+v1.2 에 있었던 오류 해결
+
 2020/7/7
 [v1.2](https://github.com/1-EXON/Discord-Profile/releases/download/v1.2/Discord.Profile.Setup.msi)
 더 쉽게 보여주는 기능 추가
