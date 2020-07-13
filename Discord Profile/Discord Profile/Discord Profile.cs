@@ -23,6 +23,8 @@ namespace Discord_Profile
         string[] myInfo = new string[20];
         string[] yourInfo = new string[20];
 
+        string strMenu = string.Empty;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             shadow.SetShadowForm(this);
@@ -65,12 +67,28 @@ namespace Discord_Profile
 
         private void butTokenCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(Data.token);
+            if (strMenu == "Home")
+            {
+                Clipboard.SetText(Data.token);
+            }
+            else if (strMenu == "Search")
+            {
+                Clipboard.SetText(inputToken.Text);
+            }
         }
 
         private void butIdCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(myInfo[Convert.ToInt32(InfoNum.username)]);
+            if (strMenu == "Home")
+            {
+                Clipboard.SetText(myInfo[Convert.ToInt32(InfoNum.username)]);
+            }
+            else if (strMenu == "Search")
+            {
+                Console.WriteLine(yourInfo[Convert.ToInt32(InfoNum.username)]);
+                Clipboard.SetText(yourInfo[Convert.ToInt32(InfoNum.username)]);
+            }
+
         }
 
         private void butIpCopy_Click(object sender, EventArgs e)
@@ -93,8 +111,11 @@ namespace Discord_Profile
             switch (menu)
             {
                 case "Home":
+                    
                     if (visible)
                     {
+                        strMenu = "Home";
+
                         labToken.Text = Data.token;
 
                         labInternalIP.Text = Data.internalIP;
@@ -148,8 +169,11 @@ namespace Discord_Profile
                     break;
 
                 case "Info":
+                    
                     if (visible)
                     {
+                        strMenu = "Info";
+
                         label22.Text = "프로그래밍을 좋아하는 학생 엑슨입니다.\nDiscord : EXON#0062\nMail : exon.indiv@gmail.com\nGithub : https://github.com/1-EXON";
                     }
 
@@ -159,9 +183,10 @@ namespace Discord_Profile
                     break;
 
                 case "Search":
+                    
                     if (visible)
                     {
-
+                        strMenu = "Search";
                     }
 
                     label23.Visible = visible;
@@ -209,6 +234,7 @@ namespace Discord_Profile
                 yourInfo = Info.GetInfo(inputToken.Text);
                 MenuVisible("Search", false);
                 MenuVisible("Home", true);
+                strMenu = "Search";
 
                 labExternalIP.Visible = false;
                 butExternalIPCopy.Visible = false;
